@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>오레곤 한인록 · Korean Directory of Oregon</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="title-wrap">
+    <h1>오레곤 한인록</h1>
+    <div class="subtitle">Korean Directory of Oregon · 2024/2025</div>
+  </div>
+  <a id="imageLink" class="image-link" href="pages/page-000.jpg" target="_blank" rel="noopener">Open page image</a>
+</header>
+
+<div class="toolbar">
+  <form id="searchForm" role="search">
+    <input id="searchInput" type="search" autocomplete="off"
+      placeholder="Search Korean or English · 한국어 또는 영어 검색"
+      aria-label="Search directory">
+    <button type="submit">Search</button>
+  </form>
+  <div class="page-controls">
+    <button id="prevBtn" aria-label="Previous page">‹</button>
+    <label>Page <input id="pageInput" inputmode="numeric" value="1" aria-label="Page number"> / <span id="pageCount">360</span></label>
+    <button id="nextBtn" aria-label="Next page">›</button>
+  </div>
+</div>
+
+<main>
+  <aside id="resultsPane" class="results-pane" aria-live="polite">
+    <div class="welcome">
+      <h2>Search the directory</h2>
+      <p>Type a Korean or English name, business, category, address, phone number, or other term.</p>
+      <p class="ko">한국어나 영어로 이름, 업소명, 업종, 주소, 전화번호 등을 검색할 수 있습니다.</p>
+    </div>
+  </aside>
+
+  <section class="viewer" aria-label="Directory page viewer">
+    <div id="pageLabel" class="page-label">Page 1</div>
+    <div class="image-stage">
+      <img id="pageImage"
+           src="pages/page-000.jpg"
+           alt="Korean Directory of Oregon page 1"
+           decoding="async">
+    </div>
+    <p class="quality-note">Pages are displayed from the original extracted scan images. Click the image to open it at full resolution.</p>
+  </section>
+</main>
+
+<script src="search-data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
