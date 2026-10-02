@@ -46,6 +46,6 @@ main{display:grid;grid-template-columns:minmax(280px,360px) minmax(0,1fr);gap:18
 }
 .copyright {
   margin-top: 4px;
-  font-size: 10px;
+  font-size: 8px;
   color: #666;
 }
