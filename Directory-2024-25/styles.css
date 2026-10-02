@@ -44,9 +44,8 @@ main{display:grid;grid-template-columns:minmax(280px,360px) minmax(0,1fr);gap:18
   .image-link{font-size:13px}
   h1{font-size:21px}
 }
-.site-footer {
-  text-align: center;
-  padding: 32px;
+.copyright {
+  margin-top: 4px;
   font-size: 10px;
   color: #666;
 }
